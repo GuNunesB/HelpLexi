@@ -17,11 +17,11 @@
  Feito por:
 </h2>
 
-<h3><a href="https://github.com/GuNunesB">Bianca Vieira.</a></h3>
-<h3><a href="https://github.com/GuNunesB">Davi de Paula.</a></h3>
+<h3><a href="https://github.com/biavsf">Bianca Vieira.</a></h3>
+<h3><a href="https://github.com/Askka01">Davi de Paula.</a></h3>
 <h3><a href="https://github.com/GuNunesB">Gustavo Nunes.</a></h3>
-<h3><a href="https://github.com/GuNunesB">Pedro Rodrigues.</a></h3>
-<h3><a href="https://github.com/GuNunesB">Samuel de Paula.</a></h3>
+<h3><a href="https://github.com/Pedrohrk0024">Pedro Rodrigues.</a></h3>
+<h3><a href="https://github.com/billgtaes">Samuel de Paula.</a></h3>
 
 <h2 align="left">
  Licença:
