@@ -6,7 +6,7 @@
  HelpLexi, o site com tudo que você precisa saber sobre dislexia, dicas para aprendizado, o significado e até leis que portadores de dislexia tem direito.
 </p>
  
-![Imagem do projeto finalizado](img/printdosite2.png)
+![Imagem do projeto finalizado](img_helplexi/img_helplexi/printdosite2.png)
  
 <h4 align="center"><a href="https://github.com/GuNunesB/HelpLexi">Confira o projeto aqui</a></h4>
 
