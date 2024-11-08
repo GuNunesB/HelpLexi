@@ -8,7 +8,7 @@
  
 ![Imagem do projeto finalizado](img_helplexi/img_helplexi/printdosite2.png)
  
-<h4 align="center"><a href="https://gununesb.github.io/HelpLexi/index.html">Confira o projeto aqui!</a></h4>
+<h4 align="center"><a href="https://gununesb.github.io/HelpLexi/index.html" target="_blank">Confira o projeto aqui!</a></h4>
 
 <br>
 <br>
@@ -37,5 +37,5 @@ The [MIT License](./LICENSE).
   Tem alguma sugestão ou elogio? Entre em contato conosco, adorariamos ter outro ponto di vista!
 </p>
 <p align="left">
- Você pode enviar pelo nosso e-mail: helpleximsg@gmail.com, ou pelas nossas redesInstagram e Facebook: <a href="https://www.instagram.com/helplexioficial/">helplexioficial.</a>
+ Você pode enviar pelo nosso e-mail: helpleximsg@gmail.com, ou pelas nossas redesInstagram e Facebook: <a href="https://www.instagram.com/helplexioficial/" target="_blank">helplexioficial.</a>
 </p>
