@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliografia</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/materiais2.css">
+    <link rel="stylesheet" href="css/estilo_login.css">
+    <link rel="stylesheet" href="css/botao.css">
+
+</head>
+
+<body>
+  <button id="btnTopo" onclick="voltarAoTopo()"><img class="imagem-editar" src="SetaCima.webp"></button>
+  <script src="js\botao.js"></script>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1E3D51;
+      padding: 8px;
+      font-size: small;
+    }
+    .navbar-logo {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      padding-left: 10px;
+      width: 8rem;
+      height: auto;
+    }
+    .navbar-menu {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-menu li {
+      position: relative;
+    }
+    .navbar-menu li a {
+font-family: "Montserrat", sans-serif;
+
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    .navbar-menu li a:hover {
+      background-color: #2a5674;
+border-radius: 5px;
+
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2a5674;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: #1E3D51;
+    }
+    
+    h2,h1{
+    font-family: "Montserrat", sans-serif;
+      color: #326A8F; 
+      padding-left: 2rem;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo"><img class="navbar-logo" src="img_helplexi/img_helplexi/image 27.png"></a>
+    <ul class="navbar-menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Dislexia</a>
+        <div class="dropdown-content">
+          <a href="O_que_e.html">O que é?</a>
+          <a href="Causa_e_Sintomas.html">Sintomas e Causas</a>
+          <a href="Diagnostico.html">Diagnósticos</a>
+          <a href="Historias.html">Histórias</a>
+          <a href="tratamento.html">Tratamento</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Mais</a>
+        <div class="dropdown-content">
+          <a href="Impacto_aprendizagem.html">Impactos na aprendizagem</a>
+          <a href="Estrategias_de_ensino.html">Estratégias de Ensino</a>
+          <a href="Leis.html">Direitos e legislação</a>
+          <a href="Acessibilidade_Online.html">Acessibilidade Online</a>
+          <a href="materiais2.html">Materias e recursos</a>
+          <a href="Bibliografia.html">Bibliografia</a>
+        </div>
+      </li>
+      <li><a href="Sobre_nos.html">Sobre nós</a></li>
+<li class="open-modal-btn" style='font-family: "Montserrat", sans-serif;'>Login</li>
+      
+
+    </ul>
+  </nav>
+  <div id="modal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="fechar" id="fechar"> X</button>
+        <h2>Cadastro</h2>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+
+            <button type="submit">Efetuar Login</button>
+             
+        </form>
+       <p>Ainda não tem cadastro? <br> Clique aqui para <A href="cadastrobia.html">Cadastrar-se</A>
+    </div>
+</div>
+
+<script>
+   const modal = document.getElementById('modal');
+const openModalBtn = document.querySelector('.open-modal-btn');
+const fechar = document.querySelector('.fechar');
+
+openModalBtn.addEventListener('click', () => {
+modal.style.display = 'flex';
+});
+
+fechar.addEventListener('click', () => {
+modal.style.display = 'none';
+});
+window.addEventListener('click', (e) => {
+if (e.target === modal) {
+    modal.style.display = 'none';
+}
+});
+</script>
+<br>
+    <h2 style="color:#326A8F"><b>Bibliografia</b></h2>
+  <br>
+    <nav>
+        <a class="menu" href="#livros">Sites</a>
+        <a class="menu" href="#software">Livros</a>
+        <a class="menu" href="#aplicativos">Leis</a>
+    </nav>
+    <br>
+
+    
+    <div class="content">
+      <h2 id="Livros"><strong>Sites</strong></h2>
+
+  <p>“Como criar sites para disléxicos”; Educamais. Disponível em: <a>https://educamais.com/como-criar-sites-para-dislexicos/</a></p>
+  <p>“Como deixar um material escrito mais amigável para quem tem dislexia?”; Instituto Domlexia, 2020. Disponível em: <a>https://www.domlexia.org.br/post/2018/09/02/como-deixar-um-material-escrito-mais-amig%C3%A1vel-para-quem-tem-dislexia></a></p>
+  <p>“Principais formas de tratamento para dislexia”; Tua Saúde, 2018. Disponível em:https://www.tuasaude.com/tratamento-para-dislexia/#:~:text=A%20dislexia%20%C3%A9%20uma%20dificuldade,<br>como%20confirmar%20se%20%C3%A9%20dislexia></p>
+  <p>Frazão, Dilza. “Biografia Albert Einstein”; Ebiografia, 2022. Disponível em: https://www.ebiografia.com/albert_einstein/ Acesso em 30 de setembro às de 2024 21h:55min</p>
+  <p>Helerbrock, Me. Rafael. “Albert Einstein”; Brasil Escola. Disponível em:https://brasilescola.uol.com.br/biografia/albert-einstein.htm Acesso em 30 de setembro de 2024 às 21h:56min</p>
+  <p>Cruz, Cinthia. “Albert Einstein era disléxico?”; DysWay, 2021. Disponível em: https://www.dysway.com.br/blog/albert-einstein-era-dislexico Acesso em 30 de setembro de 2024 às 22h:09min</p>
+  <p>Escrito por Isabella. “Lista de celebridades que são disléxicas”; Superprof blog, 2023. Disponível em: https://www.superprof.com.br/blog/famosos-transtorno-aprendizagem/ Acesso em 30 de setembro de 2024 às 22h:33min</p>
+  <p>“O que é dislexia?”; Associação Brasileira de Dislexia. 2016. Disponível em: https://www.dislexia.org.br/o-que-e-dislexia/ Acesso em 2 de outubro de 2024 às 19h:34min</p>
+  <p>Lima, Ricardo Franco de. “Dislexia do desenvolvimento: considerações gerais sobre o diagnóstico”; Abenepi, 2016. Disponível em: https://abenepi.org.br/artigos/dislexia-do-desenvolvimento-consideracoes-gerais-sobre-o-diagnostico/ Acesso em 2 de outubro de 2024 às 19h:31min</p>
+  <p>Escrito por Pippo. “Tipos de Dislexia: Descubra Qual se Identifica!”; DislexClub. Disponível em: https://dislexclub.com/tipos-de-dislexia/#:~:text=Existem%20três%20graus%20de%20dislexia,<br>dislexia%20ao%20longo%20do%20tempo. Acesso em 2 de outubro de 2024 às 19h:34min</p>
+  <p>Dossi, Priscila Zempulski, “Dislexia: o que é, sintomas, tratamento e se tem cura”. Minha Vida, 2023. Disponível em: https://www.minhavida.com.br/saude/temas/dislexia Acesso em 3 de outubro de 2024 às 18:46min</p>
+        <br>
+
+        <h2 id="software"><strong>Livros</strong></h2>
+        <p>PINTO, Ana Cristina Cruz; MATOS, Maria Almerinda Lopes de. “A Dislexia na Educação: Intervenção Psicopedagógica”; Revista Científica Multidisciplinar Núcleo do Conhecimento. Ano 1. Vol. 9. pp 631-649. outubro / novembro de 2016. ISSN. 2448-0959</p>
+<p>Cardoso, Marcélia Amorim; Freitas, Ana Carolina Abi-Chacra de Campos. “Dislexia: apontamentos e reflexões”; Educação Pública Revista, 2020. Disponível em:
+
+  https://educacaopublica.cecierj.edu.br/artigos/19/29/dislexia-apontamentos-e-reflexoes</p>
+<p>Shaywitz, S. E. (2003). Overcoming Dyslexia. Knopf</p>
+<p>American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders (5ª ed.</p>
+        
+        <br>
+        <h2 id="aplicativos"><b>Leis</b></h2>
+
+        <p>BRASIL. Lei nº3146, de 6 de julho de 2015. Institui a Lei Brasileira de inclusão da pessoa com deficiência (estatuto da pessoa com deficiência). Diário Oficial da União, Brasília, 6 de jul. 2015.</p>
+        <p>BRASIL. Lei nº12796, de 4 de abril de 2013. Altera a Lei nº 9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional, para dispor sobre a formação dos profissionais da educação e dar outras providências. Diário Oficial da União, Brasília, 4 de abr. 2013.</p>
+        <p>BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional. Diário Oficial da União, Brasília, 23 dez. 1996. Seção 1, p. 27833.</p>
+
+
+    </div>
+        
+        
+    
+        </main>
+       
+        <br>
+        
+        <br>
+</div>
+    
+        <footer class="footer" style="margin-top: 60px;">
+          <div class="footer-logo">
+            <img src="img_helplexi/img_helplexi/image 27.png" alt="Logo da Página">
+          </div>
+        
+        
+        
+          <div class="footer-links-right">
+            <a href="#">
+              <img src="img_helplexi/img_helplexi/footer/facebook.png" class="fotter-img-size"> 
+                   Helplexia <i class="icon-class"></i>
+              </a>
+              <a href="#">
+                  <img src="img_helplexi/img_helplexi/footer/instagram.png" class="fotter-img-size"> 
+                  Helplexia <i class="icon-class"></i>
+              </a>
+              <a href="#">
+                  <img src="img_helplexi/img_helplexi/footer/email.png" class="fotter-img-size"> 
+                Helplexia@gmail.com <i class="icon-class"></i>
+              </a>
+          </div>
+        </footer>
+</body>
+
+</html>

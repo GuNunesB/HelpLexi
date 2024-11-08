@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias e Recursos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/materiais2.css">
+    <link rel="stylesheet" href="css/estilo_login.css">
+    <link rel="stylesheet" href="css/botao.css">
+
+    
+
+</head>
+
+<body>
+    <button id="btnTopo" onclick="voltarAoTopo()"><img class="imagem-editar" src="SetaCima.webp"></button>
+    <script src="js\botao.js"></script>
+     <style>
+            body {
+              font-family: "Arial", sans-serif;
+              margin: 0;
+            }
+            .navbar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #1E3D51;
+              padding: 8px;
+              font-size: small;
+            }
+            .navbar-logo {
+              color: white;
+              font-size: 24px;
+              text-decoration: none;
+              padding-left: 10px;
+              width: 8rem;
+              height: auto;
+            }
+            .navbar-menu {
+              display: flex;
+              justify-content: center;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+            .navbar-menu li {
+              position: relative;
+            }
+            .navbar-menu li a {
+  font-family: "Montserrat", sans-serif;
+
+              color: white;
+              padding: 14px 20px;
+              text-decoration: none;
+              display: block;
+            }
+            .navbar-menu li a:hover {
+              background-color: #2a5674;
+    border-radius: 5px;
+
+            }
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #2a5674;
+              min-width: 160px;
+              z-index: 1;
+            }
+            .dropdown-content a {
+              padding: 12px 16px;
+            }
+            .dropdown:hover .dropdown-content {
+              display: block;
+              background-color: #1E3D51;
+            }
+            
+            h2,h1{
+            font-family: "Montserrat", sans-serif;
+              color: #326A8F; 
+              padding-left: 2rem;
+            }
+          
+          </style>
+        </head>
+        <body>
+        
+            <nav class="navbar">
+                <a href="1index.html" class="navbar-logo"><img class="navbar-logo" src="img_helplexi/img_helplexi/image 27.png"></a>
+                <ul class="navbar-menu">
+                  <li><a href="1index.html">Home</a></li>
+                  <li class="dropdown">
+                    <a href="#">Dyslexia</a>
+                    <div class="dropdown-content">
+                      <a href="1O_que_e.html">What is it?</a>
+                      <a href="1Causa_e_Sintomas.html">Symptoms and Reasons</a>
+                      <a href="1Diagnostico.html">Diagnoses</a>
+                      <a href="1Historias.html">History</a>
+                      <a href="1tratamento.html">Treatments</a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">More</a>
+                    <div class="dropdown-content">
+                      <a href="1Impacto_aprendizagem.html">Impacts on learning</a>
+                      <a href="1Estrategias_de_ensino.html">Teaching Strategies</a>
+                      <a href="1Leis.html">Rights and legislation</a>
+                      <a href="1Acessibilidade_Online.html">Online Accessibility</a>
+                      <a href="1materiais2.html">Materials and resources</a>
+                      <a href="1Bibliografia.html">Bibliography</a>
+                    </div>
+                  </li>
+                  <li><a href="1Sobre_nos.html">About us</a></li>
+        <li class="open-modal-btn" style='font-family: "Montserrat", sans-serif;'>Login</li>
+                  
+    
+                </ul>
+              </nav>
+              <div id="modal" class="modal-overlay">
+                <div class="modal-content">
+                    <button class="fechar" id="fechar"> X</button>
+                    <h2>Register</h2>
+                    <form>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+           
+                        <label for="senha">Password</label>
+                        <input type="password" id="senha" name="senha" placeholder="Your password" required>
+           
+                        <button type="submit">sign in</button>
+                         
+                    </form>
+                   <p>Don't have a registration yet? <br> Click here to<A href="1cadastrobia.html"> Register</A>
+                </div>
+            </div>
+    
+            <script>
+               const modal = document.getElementById('modal');
+        const openModalBtn = document.querySelector('.open-modal-btn');
+        const fechar = document.querySelector('.fechar');
+       
+        openModalBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+       
+        fechar.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+            </script>
+<br>
+    <h2 style="color:#326A8F"><b>Materials and Resources for Dyslexia</b></h2>
+  <br>
+    <nav>
+        <a class="menu" href="#books">Books and Adapted Texts</a>
+        <a class="menu" href="#software">Assisted Reading and Writing Software</a>
+        <a class="menu" href="#applications">Educational Applications for Dyslexics</a>
+        <a class="menu" href="#maps">Mind Maps and Graphic Organizers</a>
+    </nav>
+    <br>
+
+    <h2><b>Recommended books</b></h2>
+
+    <main class="cards">
+        <section class="card">
+            <Div class="icon">
+                <img src="livros/livro-3.jpg" alt="">
+            </Div>
+            <h5>Matheus no mundo da Dislexia
+            </H5>
+            <span></span>
+            <a class="link_compra" target="_blank" href="https://www.amazon.com.br/Matheus-mundo-dislexia-Marilia-Piazzi/dp/6500154339"><button>know more</button></a>
+            
+        </section>
+
+        <section class="card">
+            <Div class="icon">
+                <img src="livros/livro-2.png" alt="">
+            </Div>
+            <H5>João, preste atenção!</H5>
+            <span></span>
+            <a class="link_compra" target="_blank" href="https://www.amazon.com.br/Preste-Aten%C3%A7%C3%A3o-Patr%C3%ADcia-Engel-Secco/dp/8506056918/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2CLIBMOKIAX1D&dib=eyJ2IjoiMSJ9.H_3qyt0RAmv5yb1YT37ZKJHHDMBW9xvZmLKe48NnI314IAhjqA0LGeLhyO537ZHcRThThCHmu4rOgXzMgWRxs7w7r26-kr8ZsZxv76lkbyQ.guzr6lYI1dx7tpMvhBKfFxbPE2e89XMotwxc20FWNXw&dib_tag=se&keywords=Jo%C3%A3o%2C+preste+aten%C3%A7%C3%A3o!&qid=1728304007&s=books&sprefix=jo%C3%A3o+preste+aten%C3%A7%C3%A3o+%2Cstripbooks%2C208&sr=1-1"><button>know more</button></a>
+
+        </section>
+
+        <section class="card">
+            <Div class="icon">
+                <img src="livros/livro-4.webp" alt="">
+            </Div>
+            <H5>O menino que não sabia ler</H5>
+            <span></span>
+            <a class="link_compra" target="_blank" href="https://www.amazon.com.br/menino-que-n%C3%A3o-sabia-ler/dp/655616271X/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1SG1R5WEDD0E0&dib=eyJ2IjoiMSJ9.UTqdGDE2cX-84662ywQeXuGqgfYzZY0iDzLtApLc4yhA-xh2YZ7JO7XM25bJ4tCFvRAPhyafClOVYsXO6FHDZoL0nmfTLNRpVK1sB4JGS_Glg8aL5ieLyt0YM-9Ne95boLDRCrIwXugtCUycvybeR_SSNr_SJvJRW5bdvgd42VZfSQrqeIiuxuOcRhJ_n5OWZG0IQS3CrGreiiql2e4JRHXWgxjGPMZRI7vv-O7B878.-x7ba9O-NWNLj5q5QEkbHzLLtKqddvYLBbnzZgcRkfM&dib_tag=se&keywords=O+menino+que+n%C3%A3o+sabia+ler&qid=1728304064&s=books&sprefix=o+menino+que+n%C3%A3o+sabia+ler%2Cstripbooks%2C208&sr=1-1"><button>know more</button></a>
+
+        </section>
+
+        <section class="card">
+            <Div class="icon">
+                <img src="livros/livro-5.jpg" alt="">
+            </Div>
+            <H5>Como lidar com a dislexia</H5>
+            
+            <span></span>
+            <a class="link_compra" target="_blank" href="https://www.amazon.com.br/Como-Lidar-com-Dislexia-Profissionais/dp/8585439831/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=20GBEOXDBTLL9&dib=eyJ2IjoiMSJ9.WQXKCC2FKWrDsNuZjZ9nAwWBazi7MNcPMbewmmQ9rVTgvgrz9pjSTb6n2RSXmttpAaPXc6YrlDHMO3sBkLS78dsB-VP1GSypbo0xXN5doV5uGHzYiFZEjjSYVuIAlP46iowqT0UwZZ0mdBlZmnYrKA1N2ScKtYtQ3qeiX28Xxot8oe5YITxL4XpkJVLsuKq3CgLBxlQN6Ee_AbGHWSl8DHIgp8EN-I5a_6jWb56GcG4.5t3tQ_RvnWe3K3LDgOyDtcAwlYmZ3l-D7dGc2N2bNKw&dib_tag=se&keywords=Como+lidar+com+a+dislexia&qid=1728304100&s=books&sprefix=como+lidar+com+a+dislexia%2Cstripbooks%2C193&sr=1-1"><button>know more</button></a>
+
+        </section>
+
+        <section class="card">
+            <Div class="icon">
+                <img src="livros/livro-6.jpg" alt="">
+            </Div>
+            <H5>Dislexia dia a dia</H5>
+            <span></span>
+            <a class="link_compra" target="_blank" href="https://www.amazon.com.br/Dislexia-dia-Patricia-Teixeira-Abreu-ebook/dp/B0BZ2SRCLY/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3LU0JI4SBNOTL&dib=eyJ2IjoiMSJ9.FaQhPeSpTyihmixSakcIy6YoCxK61pyYPBlpkaOvZ84Dnw3bYnFIdrvKg-Vns-KM_jo8xwx1lyF0kh9MnDf1VkE2ykr0oUJTegbY-MJDYaGEkk0tfKH1NJRCSjRomjR14R5DUh0184dv1SorBowKhxafhrt1-3hsMRSMXsbgCWIuyONPUOl01wysWPaQB-KsfnQh0vdfPpGXniNfkox1hilEt8cuXo-4D_dxgY_fjFY.f4TXfjevmuBkTEAlkmkTXO_6hDiipnecO-k3urcYp0I&dib_tag=se&keywords=Dislexia+dia+a+dia&qid=1728304125&s=books&sprefix=dislexia+dia+a+dia%2Cstripbooks%2C190&sr=1-1"><button>know more</button></a>
+
+        </section>
+
+        <section class="card">
+            <Div class="icon">
+                <img src="livros/livro-1.jpg" alt="">
+            </Div>
+            <H5>Dislexicando</H5>
+            <span></span>
+            <a class="link_compra" target="_blank" href="https://www.amazon.com.br/Dislexicando-Marina-Miyazaki-Araujo/dp/8598349186?tag=operagx-continueon-br-20"><button>know more</button></a>
+
+        </section>
+    </main>
+
+    <div class="content">
+        <p>For people with dyslexia, access to appropriate materials and support resources can make all the difference in their
+            learning process.
+            With the advancement of technology and the development of new teaching methodologies, there are a variety of
+            available tools that facilitate
+            reading, writing and understanding. Below, we present some of the main materials and resources that
+            can be used by dyslexics,
+            both at home and in the school environment.</p>
+        <br>
+
+        <h2 id="Books"><strong>Books and Adapted Texts</strong></h2>
+        <p>One of the first resources to consider for people with dyslexia are adapted books. These works
+            are formatted to facilitate reading, using larger and clearer fonts, such as the famous
+            “Dyslexie” font.</p>
+
+        <p> Which projects letters like <strong>'B'</strong> and <strong> 'D'</strong> in a way that avoids confusion
+            visuals. Furthermore, adapted texts generally have greater spacing between words and lines,
+            making reading
+            less tiring and more accessible for sufferers.</p>
+
+        <p>Another solution is the use of audiobooks, which allow the content of books to be accessed through the
+            hearing, eliminating the need for visual reading. Platforms like Audible and Google Books offer a
+            Wide selection of audiobooks that can be used as an educational resource or even for leisure.</p>
+        <br>
+        <h2 id="software"><b>Assisted Reading and Writing Software</b></h2>
+    </div>
+        
+        <main class="cards">
+
+
+            <section class="card">
+                <Div class="icon">
+                    <img src="livros\Kurzweil3000png.png" alt="">
+                </Div>
+                <br><br><br><br>
+                <h5>Kurzweil 3000 </H5>
+                    <br>
+                <span> </span>
+                <a class="link_compra" target="_blank" href="https://www.kurzweiledu.com/trialsignup.php?version=k3000ff"><button>know more</button></a>
+            </section>
+    
+            <section class="card">
+                <Div class="icon">
+                    <img src="livros\ginger-png.png" alt="">
+                </Div>
+                <br><br><br><br>
+                <H5>Ginger</H5>
+                <br>
+                <span> </span>
+                <a class="link_compra" target="_blank" href="https://www.gingersoftware.com/grammarcheck"><button></a>know more</a></button></a>
+
+            </section>
+    
+            <section class="card">
+                <Div class="icon">
+                    <img src="livros\grammalypng.png" alt="">
+                </Div>
+                <br><br><br><br>
+                <H5>Grammarly</H5>
+                <br>
+                <span> </span>
+                <a class="link_compra" target="_blank" href="https://www.grammarly.com/desktop?utm_source=bing&utm_medium=cpc&utm_campaign=626951508&utm_content=81226539543504&utm_term=ginger%20software&keywordid=81226693747071&targetid=kwd-81226693747071:loc-20&adgroup=1299623187723172&device=c&matchtype=e&network=o&extension=&clickid=07a5d8a67cb7146cab98bf8ada216267&&msclkid=07a5d8a67cb7146cab98bf8ada216267&utm_source=bing&utm_medium=cpc&utm_campaign=2023%20-%20Search%20-%20T4%20-%20Competitor&utm_term=ginger%20software&utm_content=Ginger&gclid=07a5d8a67cb7146cab98bf8ada216267&gclsrc=3p.ds"><button>know more</button></a>
+                
+            </section>
+    
+            <section class="card">
+                <Div class="icon">
+                    <img src="livros\ClaroRead-Texthelper.svg" alt="">
+                </Div>
+                <br><br><br><br>
+                <H5>ClaroRead</H5>
+                <br>
+                <span> </span>
+                <a class="link_compra" target="_blank" href="https://www.texthelp.com/en-gb/solutions/dsa/claroread/"><button>know more</button></a>
+               
+            </section>
+    
+            <section class="card">
+                <Div class="icon">
+                    <img src="livros\Root-OpenDyslexic_Font-1.0.0.png.256x256_q95.png" alt="">
+                </Div>
+                <br><br><br><br>
+                <H5> OpenDylexic </H5>
+                <br>
+                <span> </span>
+                <a class="link_compra" target="_blank" href="https://opendyslexic.org/"><button>know more</button></a>
+                
+            </section>
+    
+            <section class="card">
+                <Div class="icon">
+                    <img src="livros\dyslexie.jpg" alt="">
+                </Div>
+                <br><br><br><br>
+                <H5> Dyslexie</H5>
+                <br>
+                <span> </span>
+                <a class="link_compra" target="_blank" href="https://dyslexiefont.com/en/"><button>know more</button></a>
+
+            </section>
+    
+        </main>
+       
+   
+   
+       <div class="content">
+        <p>Technology has also been a powerful ally in helping people with dyslexia. Reading software
+            assisted, such as "Kurzweil 3000" and "ClaroRead", allow texts to be read aloud, while the
+            user follows visually. These programs can also highlight words as they are read, which
+            which helps develop reading skills.</p>
+
+        <p>In addition, there are programs that help with writing, such as "Ginger" and "Grammarly". These software fix
+            spelling and grammatical errors,
+            in addition to suggesting style improvements, which is extremely useful for those who face difficulties in
+            organization and structuring of sentences. With the
+            By using these resources, people with dyslexia are able to express their ideas with more clarity and confidence.
+        </p>
+        <br>
+        <h2 id="applications"> <b>Educational Applications for Dyslexics</b></h2>
+        <p>There are several mobile apps created specifically to help people with dyslexia. One example is the
+            "Dyseggxia", which offers games and
+            activities aimed at practicing reading and writing. Another popular app is "Ghotit Real Writer",
+            which was developed to assist in the
+            writing, offering word suggestions and corrections in real time. These applications make the process of
+            more dynamic and less stressful learning.</p>
+
+        <p>Applications such as "ModMath" are also aimed at helping to organize mathematical operations, as
+            that dyslexia can affect the way
+            some people crunch numbers and calculate. With these resources, it is possible to improve academic performance
+            interactively.</p>
+
+        <h2 id="maps"> <b>Mind Maps and Graphic Organizers</b></h2>
+        <p>People with dyslexia often benefit from graphic organizers and mind maps, which help with
+            visualization and structuring of information
+            complex. Tools like "MindMeister" and "Inspiration" are useful for creating diagrams, flowcharts and
+            concept maps that aid understanding
+            and memorization of content. These visual strategies are effective for dyslexics as they transform the
+            content written in easy graphical representations
+            to understand.</p>
+    </div>
+
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="footer-logo">
+          <img src="img_helplexi/img_helplexi/image 27.png" alt="Logo da Página">
+        </div>
+      
+      
+      
+        <div class="footer-links-right">
+          <a href="#">
+            <img src="img_helplexi/img_helplexi/footer/facebook.png" class="fotter-img-size"> 
+                 Helplexia <i class="icon-class"></i>
+            </a>
+            <a href="#">
+                <img src="img_helplexi/img_helplexi/footer/instagram.png" class="fotter-img-size"> 
+                Helplexia <i class="icon-class"></i>
+            </a>
+            <a href="#">
+                <img src="img_helplexi/img_helplexi/footer/email.png" class="fotter-img-size"> 
+              Helplexia@gmail.com <i class="icon-class"></i>
+            </a>
+        </div>
+      </footer>
+</body>
+
+</html>

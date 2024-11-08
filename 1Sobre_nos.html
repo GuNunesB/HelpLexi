@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/materiais2.css">
+    <link rel="stylesheet" href="css/estilo_login.css">
+    <link rel="stylesheet" href="css/botao.css">
+
+</head>
+
+<body>
+  <button id="btnTopo" onclick="voltarAoTopo()"><img class="imagem-editar" src="SetaCima.webp"></button>
+  <script src="js\botao.js"></script>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1E3D51;
+      padding: 8px;
+      font-size: small;
+    }
+    .navbar-logo {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      padding-left: 10px;
+      width: 8rem;
+      height: auto;
+    }
+    .navbar-menu {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-menu li {
+      position: relative;
+    }
+    .navbar-menu li a {
+font-family: "Montserrat", sans-serif;
+
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    .navbar-menu li a:hover {
+      background-color: #2a5674;
+border-radius: 5px;
+
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2a5674;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: #1E3D51;
+    }
+    
+    h2,h1{
+    font-family: "Montserrat", sans-serif;
+      color: #326A8F; 
+      padding-left: 2rem;
+    }
+  
+    img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="1index.html" class="navbar-logo"><img class="navbar-logo" src="img_helplexi/img_helplexi/image 27.png"></a>
+    <ul class="navbar-menu">
+      <li><a href="1index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Dyslexia</a>
+                <div class="dropdown-content">
+                  <a href="1O_que_e.html">What is it?</a>
+                  <a href="1Causa_e_Sintomas.html">Symptoms and Reasons</a>
+                  <a href="1Diagnostico.html">Diagnoses</a>
+                  <a href="1Historias.html">History</a>
+                  <a href="1tratamento.html">Treatments</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content">
+                  <a href="1Impacto_aprendizagem.html">Impacts on learning</a>
+                  <a href="1Estrategias_de_ensino.html">Teaching Strategies</a>
+                  <a href="1Leis.html">Rights and legislation</a>
+                  <a href="1Acessibilidade_Online.html">Online Accessibility</a>
+                  <a href="1materiais2.html">Materials and resources</a>
+                  <a href="1Bibliografia.html">Bibliography</a>
+                </div>
+              </li>
+              <li><a href="1Sobre_nos.html">About us</a></li>
+    <li class="open-modal-btn" style='font-family: "Montserrat", sans-serif;'>Login</li>
+              
+
+            </ul>
+          </nav>
+          <div id="modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="fechar" id="fechar"> X</button>
+                <h2>Register</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+       
+                    <label for="senha">Password</label>
+                    <input type="password" id="senha" name="senha" placeholder="Your password" required>
+       
+                    <button type="submit">sign in</button>
+                     
+                </form>
+               <p>Don't have a registration yet? <br> Click here to<A href="1cadastrobia.html"> Register</A>
+    </div>
+</div>
+
+<script>
+   const modal = document.getElementById('modal');
+const openModalBtn = document.querySelector('.open-modal-btn');
+const fechar = document.querySelector('.fechar');
+
+openModalBtn.addEventListener('click', () => {
+modal.style.display = 'flex';
+});
+
+fechar.addEventListener('click', () => {
+modal.style.display = 'none';
+});
+window.addEventListener('click', (e) => {
+if (e.target === modal) {
+    modal.style.display = 'none';
+}
+});
+</script>
+    <h2 style="color:#326A8F"><b>About us</b></h2>
+  
+    <nav>
+        <a class="menu" href="#livros">Website premise</a>
+        <a class="menu" href="#software">Members</a>
+    </nav>
+    <br>
+
+    <h2 id="Livros"><strong>Website premise</strong></h2>
+
+    <div class="content">
+        <p>Our project was developed based on the neurodiversity theme proposed by Etec Sebrae, bringing together the technical subjects from the systems development course and the subjects from the common base of high school, and on top of this theme we talk about dyslexia. With this theme we developed a website trying to reduce the difficulties that dyslexic people have when surfing the internet. Focusing on creating an inclusive and easily accessible website for neurodivergent people.</p>
+        <br>
+        <div style="text-align: center;"> <img src="img_helplexi/img_helplexi/img.16.jpg" style="height: 500px; width: 700px"></div>
+
+    <br>
+
+        <h2 id="software"><strong>Members</strong></h2>
+        <div class="container">
+          <img src="img_helplexi/img_helplexi/icones/maiorq_icon.png" alt="Logo" class="logo">
+          <p class="text">I'm Samuel de Paula e Silva Claussen, I'm 16 years old. I was responsible for putting the pages together and translating them into English.</p>
+          </div>
+        </div>
+        <div>
+          <div class="container">
+          <img src="img_helplexi/img_helplexi/Image.jpeg" alt="Logo" class="logo">
+          <p class="text">I'm Bianca Vieira Silva Ferreira, I'm 16 years old. I was responsible fot the documatio and the slides</p>
+          </div>
+          <div class="container">
+          <img src="img_helplexi/img_helplexi/icones/nounbook_icon.png" alt="Logo" class="logo">
+          <p class="text">I'm Pedro Henrique Rodrigues Koserski, I'm 16 years old. I was responsible for the button, that brings thw user to the top of the page, and some pages</p>
+          </div>
+          <div class="container">
+          <img src="img_helplexi/img_helplexi/Mídia (1).jpeg" alt="Logo" class="logo">
+          <p class="text">I'm Davi de Paula Brum, I'm 16 years old. I was responsabel for the navbar and some pages</p>
+          </div>
+          <div class="container">
+          <img src="img_helplexi/img_helplexi/gustavo_foto.jfif" alt="Logo" class="logo">
+          <p class="text">I'm Gustavo Nunes Bispo, I'm 16 years old. I was responsabel for the design and database</p>
+          </div>
+        </div>  </div>
+        
+        <br>
+    </div>
+        
+        
+    
+        </main>
+        
+        <br>
+</div>
+<footer class="footer" style="margin-top: 60px;">
+  <div class="footer-logo">
+    <img src="img_helplexi/img_helplexi/image 27.png" alt="Logo da Página">
+  </div>
+
+
+
+  <div class="footer-links-right">
+    <a href="#">
+      <img src="img_helplexi/img_helplexi/footer/facebook.png" class="fotter-img-size"> 
+           Helplexia <i class="icon-class"></i>
+      </a>
+      <a href="#">
+          <img src="img_helplexi/img_helplexi/footer/instagram.png" class="fotter-img-size"> 
+          Helplexia <i class="icon-class"></i>
+      </a>
+      <a href="#">
+          <img src="img_helplexi/img_helplexi/footer/email.png" class="fotter-img-size"> 
+        Helplexia@gmail.com <i class="icon-class"></i>
+      </a>
+  </div>
+</footer>
+<script src="js/script.js"></script> 
+</html>

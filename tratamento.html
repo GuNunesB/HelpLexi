@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/materiais2.css">
+    <link rel="stylesheet" href="css/estilo_login.css">
+    <link rel="stylesheet" href="css/botao.css">
+
+</head>
+
+<body>
+  <button id="btnTopo" onclick="voltarAoTopo()"><img class="imagem-editar" src="SetaCima.webp"></button>
+  <script src="js\botao.js"></script>
+     <style>
+            body {
+              font-family: "Arial", sans-serif;
+              margin: 0;
+            }
+            .navbar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #1E3D51;
+              padding: 8px;
+              font-size: small;
+            }
+            .navbar-logo {
+              color: white;
+              font-size: 24px;
+              text-decoration: none;
+              padding-left: 10px;
+              width: 8rem;
+              height: auto;
+            }
+            .navbar-menu {
+              display: flex;
+              justify-content: center;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+            .navbar-menu li {
+              position: relative;
+            }
+            .navbar-menu li a {
+  font-family: "Montserrat", sans-serif;
+
+              color: white;
+              padding: 14px 20px;
+              text-decoration: none;
+              display: block;
+            }
+            .navbar-menu li a:hover {
+              background-color: #2a5674;
+    border-radius: 5px;
+
+            }
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #2a5674;
+              min-width: 160px;
+              z-index: 1;
+            }
+            .dropdown-content a {
+              padding: 12px 16px;
+            }
+            .dropdown:hover .dropdown-content {
+              display: block;
+              background-color: #1E3D51;
+            }
+            
+            h2,h1{
+            font-family: "Montserrat", sans-serif;
+              color: #326A8F; 
+              padding-left: 2rem;
+            }
+          
+          </style>
+        </head>
+        <body>
+        
+          <nav class="navbar">
+            <a href="index.html" class="navbar-logo"><img class="navbar-logo" src="img_helplexi/img_helplexi/image 27.png"></a>
+            <ul class="navbar-menu">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Dislexia</a>
+                <div class="dropdown-content">
+                  <a href="O_que_e.html">O que é?</a>
+                  <a href="Causa_e_Sintomas.html">Sintomas e Causas</a>
+                  <a href="Diagnostico.html">Diagnósticos</a>
+                  <a href="Historias.html">Histórias</a>
+                  <a href="tratamento.html">Tratamento</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Mais</a>
+                <div class="dropdown-content">
+                  <a href="Impacto_aprendizagem.html">Impactos na aprendizagem</a>
+                  <a href="Estrategias_de_ensino.html">Estratégias de Ensino</a>
+                  <a href="Leis.html">Direitos e legislação</a>
+                  <a href="Acessibilidade_Online.html">Acessibilidade Online</a>
+                  <a href="materiais2.html">Materias e recursos</a>
+                  <a href="Bibliografia.html">Bibliografia</a>
+                </div>
+              </li>
+              <li><a href="Sobre_nos.html">Sobre nós</a></li>
+    <li class="open-modal-btn" style='font-family: "Montserrat", sans-serif;'>Login</li>
+              
+
+            </ul>
+          </nav>
+          <div id="modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="fechar" id="fechar"> X</button>
+                <h2>Cadastro</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+       
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+       
+                    <button type="submit">Efetuar Login</button>
+                     
+                </form>
+               <p>Ainda não tem cadastro? <br> Clique aqui para <A href="cadastrobia.html">Cadastrar-se</A>
+            </div>
+        </div>
+
+        <script>
+           const modal = document.getElementById('modal');
+    const openModalBtn = document.querySelector('.open-modal-btn');
+    const fechar = document.querySelector('.fechar');
+   
+    openModalBtn.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+   
+    fechar.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+        </script>
+<br>
+    <h2 style="color:#326A8F"><b>Tratamento</b></h2>
+  <br>
+    <nav>
+        <a class="menu" href="#livros">Como é feito o tratamento?
+        </a>
+        <a class="menu" href="#software">Ferramentas de auxílio para disléxicos 
+        </a>
+        <a class="menu" href="#aplicativos"> Trabalho de psicólogos no tratamento
+        </a>
+        <a class="menu" href="#mapas">Pais e professores no tratamento</a>
+        </a>
+    </nav>
+    <br>
+
+    <h2 id="livros"><b>Como é feito o tratamento?</b></h2>
+
+
+  
+
+    <div class="content">
+        <p>A dislexia é uma neurodivergência sem cura, porém pode ser controlada, através de um tratamento específico para cada caso. O tratamento não é feito com medicamentos, apenas para casos específicos quando a pessoa tem outro transtorno de atenção ou aprendizagem.
+        </p>
+
+        <p>Para dar início ao tratamento da dislexia é evidenciado todas as dificuldades apresentadas no processo do diagnóstico, são envolvidas várias abordagens que prezam o melhor desempenho da leitura e o aprendizado. O PEI (plano de ensino individualizado) é uma ótima opção para o processo de ensino do portador da dislexia, usando um método que o aluno melhor se adapte e o conteúdo, facilitando a retenção de informações.</p>
+        <br>
+
+        <h2 id="software"><strong>Ferramentas de auxílio para disléxicos 
+        </strong></h2>
+        <p>As ferramentas de leitura, que convertem os textos em áudio, permitem que os portadores da dislexia acompanhem a leitura com áudios, podendo aumentar a compreensão do texto. Os sites e aplicativos que transformam o texto em áudio, são ótimas opções para os disléxicos.
+</p>
+        <p>Os audiobooks são muito úteis, permitindo tenham acesso ao conteúdo sem necessidade de leitura tradicional. Além disso as fontes especiais, como “Open Dyslexic” e “Dyslexie”, feitas para reduzir a confusão visual entre letras semelhantes, como "B" e "D", que podem ser instaladas e aplicadas no texto.</p>
+          <br>
+        <div style="text-align: center;"> <img src="img_helplexi/img_helplexi/img.1 e 10.jpg" style="height: 500px; "></div>
+
+    
+        <br>
+        <h2 id="aplicativos"><b> Trabalho de psicólogos no tratamento </b></h2>
+    </div>
+        
+        
+    
+        </main>
+       
+   
+   
+       <div class="content">
+        <p>O tratamento é feito com psicopedagogos, que trabalham com os disléxicos estratégias para o aprendizado e desenvolvimento intelectual. Eles ajudam a melhorar organização do tempo e ideias. Os terapeutas ou psicólogos, ajudam as questões emocionais e comportamentais, principalmente em casos em que a dislexia surge por conta de um trauma cerebral.
+        </p>
+
+        <p>Pessoas com dislexia podem experimentar de frustrações, baixa autoestima e ansiedade em relação a leitura, os terapeutas têm seu papel de ajudar a enfrentar os desafios. E os fonoaudiólogos com as sessões ajudam aquelas pessoas que apresentam dificuldades na fala e na audição de algumas palavras.</p>
+        <br>
+        
+        <br>
+        <h2 id="mapas"> <b>Pais e professores no tratamento</b></h2>
+        <p>
+          A família e a escola têm papéis cruciais para o avanço do tratamento da dislexia. É importante que os pais ou familiares tenham conversas constantes, os professores e especialistas que acompanham o disléxico, devem monitorar o desempenho e ajustar o tratamento, oferecer suporte adequado, como tempo a mais para executar provas se necessário. 
+        </p>
+
+
+    </div>
+
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="footer-logo">
+          <img src="img_helplexi/img_helplexi/image 27.png" alt="Logo da Página">
+        </div>
+      
+      
+      
+        <div class="footer-links-right">
+          <a href="#">
+            <img src="img_helplexi/img_helplexi/footer/facebook.png" class="fotter-img-size"> 
+                 Helplexia <i class="icon-class"></i>
+            </a>
+            <a href="#">
+                <img src="img_helplexi/img_helplexi/footer/instagram.png" class="fotter-img-size"> 
+                Helplexia <i class="icon-class"></i>
+            </a>
+            <a href="#">
+                <img src="img_helplexi/img_helplexi/footer/email.png" class="fotter-img-size"> 
+              Helplexia@gmail.com <i class="icon-class"></i>
+            </a>
+        </div>
+      </footer>
+</body>
+
+</html>

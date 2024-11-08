@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Reset básico */
+body, margin, padding {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos da navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #DBDBDB;
+    padding: 1rem;
+    color: #3c535c;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  .image{
+    width: 10rem;
+  }
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    text-decoration-color: #168cbb;
+}
+
+.nav-links a {
+    color: #1f2c31;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+    background-color: #6e6e6e;
+    border-radius: 4px;
+}
+
+/* Estilos do ícone de hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #6e6e6e;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        text-align: center;
+    }
+}

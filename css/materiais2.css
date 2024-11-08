@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main.cards{
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: center;
+    padding: 42px;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+main.cards section.card .icon{
+    width: 100px;
+    height: 64px;
+    margin-bottom: 100px;
+}
+main.cards section.card img {
+    width: 100%;
+}
+main.cards section.card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 15px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 15px rgba(93,93,93, 0.2);
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 35px;
+    border: 0;
+    cursor: pointer ;
+    font-size:12px;
+    background-color: #4559a0;
+}
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.h4{
+    color:#326A8F;
+    text-decoration: solid;
+}
+
+.titulo{
+        color: #326A8F; 
+        padding-left: 2rem;
+        text-align: center;
+            }
+
+h4{
+    margin: 34px;
+    
+}
+
+.content{
+    margin: 150px;
+    text-align: justify ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+nav {
+    text-align: center;
+    background: #F77A28;
+    padding: 10px;
+}
+
+.menu{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    
+}
+.menu:hover {
+    transition: 0.4s;
+    text-shadow: 2px 2px 2px #000000; 
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16.5px;
+}
+h5{
+    text-align: center;
+    margin-top: auto;
+}
+
+span {
+    margin-bottom: 25px;    
+}
+
+.link_compra {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.link_compra:hover {
+    margin-top: 18px;
+    font-size: 10px;
+    color: white;
+    text-shadow: 3px 3px 3px #000000; 
+    transition: 0.4s;
+    text-decoration: none;
+    text-align: center;
+}
